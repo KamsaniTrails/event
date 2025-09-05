@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  
+  <div class="port">MY PORTFOLIO</div>
+  <header class="site-header">
+    <nav class="bottom-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+  </header>
+
+  <section id="home" class="home-section">
+    <div class="home-content animate-fade">
+      <div class="home-text animated-text">
+        <h1 id="heading1">Hi, I'm Mohana Sree</h1>
+        <h2 id="heading2">Full-Stack Web Developer</h2>
+        <p id="description">
+        I build responsive websites using modern technologies like React, Node.js,Express.js and MongoDB.
+        </p>
+      </div>
+      <div class="home-image slide-right circle-animation">
+        <img src="../images/mohana-photoaidcom-cropped.png" alt="My Photo" />
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about"class="about-section">
+    <div class="sky-background">
+      <div class="small-cloud cloud1"></div>
+      <div class="small-cloud cloud2"></div>
+      <div class="small-cloud cloud3"></div>
+      <div class="cloud-container">
+        <svg viewBox="0 0 1000 500" class="cloud-svg">
+          <path fill="#ffffff" d="M200,350 
+            Q120,220 300,200 
+            Q280,100 480,150 
+            Q560,40 660,140 
+            Q800,100 820,200 
+            Q950,220 900,350 
+            Q800,400 700,380 
+            Q600,450 500,400 
+            Q300,470 200,350 Z" />
+          
+          <foreignObject x="180" y="150" width="640" height="200">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="cloud-text">
+              <h1>About Me</h1>
+              <p>
+                Hi, I'm Kamsani Mohana Sree, a passionate and dedicated web developer focusing on frontend technologies.
+                I’m currently pursuing my B.Tech at RGUKT Srikakulam. I love building interactive websites using HTML, CSS, JavaScript, and React.
+                <!-- My goal is to become a full-stack developer and contribute to impactful tech projects. -->
+              </p>
+            </div>
+          </foreignObject>
+        </svg>
+      </div>
+      <div class="animated-circles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="skills" class="skills">
+    <div class="skill-section">
+      <!-- Comedy Animation Above Skills -->
+<div class="comedy-animations">
+  <span class="emoji">😂</span>
+  <span class="emoji">🤪</span>
+  <span class="emoji">🤓</span>
+  <span class="emoji">😜</span>
+</div>
+
+      <div class="animated-lines">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+      
+      <h2>Skills</h2>
+  
+      <!-- Skills List -->
+      <div class="skill-list fade-in" id="skillList">
+        <div class="skill-item" onclick="showSkillDetail('HTML')">HTML</div>
+        <div class="skill-item" onclick="showSkillDetail('CSS')">CSS</div>
+        <div class="skill-item" onclick="showSkillDetail('JavaScript')">JavaScript</div>
+        <div class="skill-item" onclick="showSkillDetail('React')">React</div>
+        <div class="skill-item" onclick="showSkillDetail('NodeJS')">NodeJS</div>
+        <div class="skill-item" onclick="showSkillDetail('Express')">Express</div>
+        <div class="skill-item" onclick="showSkillDetail('MongoDB')">MongoDB</div>
+        <p>Click each skill for more information</p>
+      </div>
+      <!-- Paper View -->
+      <div class="skill-detail fade-in" id="skillDetail">
+        <div class="paper">
+          <div class="skill-content">
+            <div class="text-content">
+              <h3 id="skillTitle">Skill Name</h3>
+              <p id="skillContent">Skill description will appear here.</p>
+            </div>
+            <div class="image-content">
+              <img id="skillImage" src="" alt="Skill Image" />
+            </div>
+          </div>
+          <button onclick="closeSkillDetail()">Back to Skills</button>
+        </div>
+      </div>
+      <div class="animated-circles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </section>
+  
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+  
+    <div class="project-grid">
+      <!-- First row: 2 projects -->
+      <div class="project-row">
+        <div class="project-card">
+          <img src="project1.jpg" alt="Project 1" />
+          <h3>FOOD RECIPE WEBSITE</h3>
+          <p>A user-friendly web app to explore, search, and save diverse food recipes with detailed instructions and ingredients.</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="project-card">
+          <img src="project2.jpg" alt="Project 2" />
+          <h3>SOCIAL MEDIA WEBSITE FRONTEND</h3>
+          <p>A responsive and interactive frontend for a social media platform featuring user profiles, posts, likes, and comments.</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </div>
+  
+      <!-- Second row: 3 projects -->
+      <div class="project-row">
+        <div class="project-card">
+          <img src="project3.jpg" alt="Project 3" />
+          <h3>DYNAMIC FRIEND MANAGEMENT</h3>
+          <p>An interactive app to add, view, and manage friends dynamically with real-time updates and user-friendly interface.</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="project-card">
+          <img src="project4.jpg" alt="Project 4" />
+          <h3>VIDEO CALL RESPONSIVE</h3>
+          <p>A responsive video calling app enabling seamless real-time communication across devices with adaptive UI.</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+        <!-- <div class="project-card">
+          <img src="project5.jpg" alt="Project 5" />
+          <h3>REACT BASED IMAGE SEARCH</h3>
+          <p>A React-powered image search application that fetches and displays images dynamically based on user queries with a clean, responsive design.</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+         -->
+      </div>
+    </div>
+  
+    <p>
+      More projects are available on my 
+      <a href="https://www.linkedin.com/in/mohanasreekamasani/" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>. Check out my profile and follow me for updates!
+    </p>
+  </section>
+  
+  <section id="contact" class="contact">
+    <div class="contact-section">
+      <h2>Contact Me</h2>
+      
+      <form id="contactForm" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+  
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+  
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+  
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formError" style="color: red; margin-top: 10px;"></p>
+      </form>
+    </div>
+  </section>
+<section></section>
+<section ></section>
+    <script>
+  function wrapLetters(id) {
+    const el = document.getElementById(id);
+    const text = el.textContent;
+    el.innerHTML = text
+      .split("")
+      .map((char, i) =>
+        `<span style="animation-delay: ${i * 0.05}s">${char === " " ? "&nbsp;" : char}</span>`
+      )
+      .join("");
+  }
+
+  wrapLetters("heading1");
+  wrapLetters("heading2");
+  wrapLetters("description");
+  
+  /*form validation */
+  const form = document.getElementById('contactForm');
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const message = document.getElementById('message');
+  const errorText = document.getElementById('formError');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); 
+    if (name.value.trim() === '' || email.value.trim() === '' || message.value.trim() === '') {
+      errorText.textContent = 'Please fill out all fields.';
+      return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email.value.trim())) {
+      errorText.textContent = 'Please enter a valid email address.';
+      return;
+    }
+    errorText.textContent = '';
+    alert('Message sent successfully!');
+    form.reset(); 
+  });
+
+
+
+  /*skill data */
+  const skillDescriptions = {
+  HTML: {
+    desc: "HTML is the standard markup language for creating web pages.",
+    img: "../images/html.jpg"
+  },
+  CSS: {
+    desc: "CSS is used to style HTML elements and create beautiful web layouts.",
+    img: "../images/css.jpg"
+  },
+  JavaScript: {
+    desc: "JavaScript enables dynamic behavior on web pages.",
+    img: "../images/js.webp"
+  },
+  React: {
+    desc: "React is a JavaScript library for building user interfaces.",
+    img: "../images/react.png"
+  },
+  NodeJS: {
+    desc: "NodeJS allows JavaScript to run on the server-side.",
+    img: "../images/nodejs.png"
+  },
+  Express: {
+    desc: "Express is a web framework for NodeJS to build web applications.",
+    img: "../images/express-js.png"
+  },
+  MongoDB: {
+    desc: "MongoDB is a NoSQL database for storing JSON-like documents.",
+    img: "../images/mongodb.webp"
+  }
+};
+
+function showSkillDetail(skill) {
+  const detail = skillDescriptions[skill];
+
+  document.getElementById("skillTitle").innerText = skill;
+  document.getElementById("skillContent").innerText = detail.desc;
+  document.getElementById("skillImage").src = detail.img;
+
+  const skillList = document.getElementById("skillList");
+  const skillDetail = document.getElementById("skillDetail");
+
+  skillList.classList.add("fade-out");
+
+  setTimeout(() => {
+    skillList.style.display = "none";
+    skillDetail.style.display = "block";
+    skillDetail.classList.remove("fade-out");
+    skillDetail.classList.add("fade-in");
+  }, 500);
+}
+
+function closeSkillDetail() {
+  const skillList = document.getElementById("skillList");
+  const skillDetail = document.getElementById("skillDetail");
+
+  skillDetail.classList.remove("fade-in");
+  skillDetail.classList.add("fade-out");
+
+  setTimeout(() => {
+    skillDetail.style.display = "none";
+    skillList.style.display = "flex";
+    skillList.classList.remove("fade-out");
+    skillList.classList.add("fade-in");
+  }, 500);
+}
+</script>
+
+</body>
+</html>

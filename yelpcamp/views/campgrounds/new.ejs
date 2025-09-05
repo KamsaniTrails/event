@@ -1,0 +1,69 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="row">
+    <h1 class="text-center">New Campground</h1>
+    <div class="col-6 offset-3">
+        <form action="/campgrounds" method="POST" novalidate class="validate-form">
+            <div class="mb-3" >
+                <label class="form-label" for="title">Title</label>
+                <input  class="form-control" type="text" id="title" name="campground[title]" required>
+                <div class="validate-feedback">
+                    Looks  good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label"for="location">Location</label>
+                <input class="form-control" type="text" id="location" name="campground[location]" required>   
+                <div class="validate-feedback">
+                    Looks  good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label"for="image">Image URL</label>
+                <input class="form-control" type="text" id="image" name="campground[image]" required>
+                <div class="validate-feedback">
+                    Looks  good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label"for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="campground[description]" required></textarea>
+                <div class="validate-feedback">
+                    Looks  good!
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">%</span>
+                <input type="text" class="from-control" id="price" placeholder="0.00" aria-label="price" aria-description="price-label" name="campground[price]" required>
+                <div class="validate-feedback">
+                    Looks  good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary">Add Campground</button>
+            </div>     
+           </form>
+        <a href="/campgrounds">All campgrounds</a>
+    </div>
+</div>
+
+
+<script>
+    (function (){
+        'use strict';
+
+        const forms = document.querySelectorAll(".validated-form");
+
+        Array.prototype.slice.call(forms)
+        .forEach(function(form) {
+            form.addEventListener("submit", function(event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    useUnifiedTopology: true
+}
+                form.classList.add("was-validated");
+            }, false);
+        });
+    })();
+</script>
